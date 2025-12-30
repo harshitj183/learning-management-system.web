@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --primary: #2563EB; /* Bright Blue */
+  --primary-hover: #1D4ED8;
+  --secondary: #FBBF24; /* Warm Yellow */
+  --secondary-hover: #D97706;
+  
+  /* Neutral Colors */
+  --background: #FFFFFF;
+  --foreground: #0F172A; /* Slate 900 */
+  --muted: #F1F5F9; /* Slate 100 */
+  --muted-foreground: #64748B; /* Slate 500 */
+  --border: #E2E8F0; /* Slate 200 */
+  
+  /* Status Colors */
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utility Classes if needed that aren't in Tailwind standard yet */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
