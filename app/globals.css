@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Colors */
-  --primary: #2563EB; /* Bright Blue */
-  --primary-hover: #1D4ED8;
-  --secondary: #FBBF24; /* Warm Yellow */
-  --secondary-hover: #D97706;
-  
+  /* Brand Colors - Famiglia Doro Theme */
+  --primary: #FFD600;
+  /* Vivid Yellow */
+  --primary-foreground: #000000;
+  --secondary: #FFFBEB;
+  /* Light Yellow Background */
+  --accent: #E0E7FF;
+  /* Light Blue/Indigo for charts */
+
   /* Neutral Colors */
   --background: #FFFFFF;
-  --foreground: #0F172A; /* Slate 900 */
-  --muted: #F1F5F9; /* Slate 100 */
-  --muted-foreground: #64748B; /* Slate 500 */
-  --border: #E2E8F0; /* Slate 200 */
-  
+  --foreground: #1F2937;
+  /* Gray 800 */
+  --muted: #F3F4F6;
+  /* Gray 100 */
+  --muted-foreground: #6B7280;
+  /* Gray 500 */
+  --border: #E5E7EB;
+  /* Gray 200 */
+
   /* Status Colors */
-  --success: #22C55E;
+  --success: #10B981;
   --error: #EF4444;
   --warning: #F59E0B;
 }
@@ -30,21 +37,33 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
+
   --animate-fade-in: fade-in 0.5s ease-out;
   --animate-slide-up: slide-up 0.5s ease-out;
-  
+
   @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
-  
+
   @keyframes slide-up {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
 
