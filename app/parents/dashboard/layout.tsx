@@ -13,10 +13,10 @@ export default function DashboardLayout({
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const menuItems = [
-        { label: "Dashboard", href: "/dashboard" },
-        { label: "Courses Management", href: "/dashboard/courses" },
-        { label: "Students", href: "/dashboard/children" },
-        { label: "Discuss", href: "/dashboard/discuss" },
+        { label: "Dashboard", href: "/parents/dashboard" },
+        { label: "Courses Management", href: "/parents/dashboard/courses" },
+        { label: "Students", href: "/parents/dashboard/children" },
+        { label: "Discuss", href: "/parents/dashboard/discuss" },
     ];
 
     return (
@@ -231,7 +231,7 @@ export default function DashboardLayout({
                                     ))}
                                 </div>
                                 <div className="p-3 text-center border-t border-gray-100">
-                                    <Link href="/dashboard/discuss" className="text-sm text-blue-600 hover:text-blue-700 font-medium">View all messages</Link>
+                                    <Link href="/parents/dashboard/discuss" className="text-sm text-blue-600 hover:text-blue-700 font-medium">View all messages</Link>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +308,7 @@ export default function DashboardLayout({
                                     </div>
                                 </div>
                                 <div className="py-2">
-                                    <Link href="/dashboard" className="w-full px-4 py-2.5 text-left text-sm hover:bg-gray-50 flex items-center gap-3 block">
+                                    <Link href="/parents/dashboard" className="w-full px-4 py-2.5 text-left text-sm hover:bg-gray-50 flex items-center gap-3 block">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                                             <circle cx="12" cy="7" r="4" />
